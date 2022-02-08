@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>
+         string
+        </title>
+    </head>
+        <script>
+            function len(){
+                l=document.getElementById('str').value;
+                document.getElementById('res').value=l.length;
+            }
+            function slice(){
+                s=document.getElementById('str').value;
+                document.getElementById('res').value=s.slice(0,5);
+            }
+            function sub(){
+                sb=document.getElementById('str').value;
+                document.getElementById('res').value=sb.substring(0,4);
+            }
+            function rep(){
+                r=document.getElementById('str').value;
+                p=document.getElementById('str1').value;
+                document.getElementById('res').value=r.replace(r,p);
+            }
+            function upper(){
+                h=document.getElementById('str').value;
+                document.getElementById('upp').value=h.toUpperCase();
+            }
+            function lower(){
+                g=document.getElementById('str').value;
+                document.getElementById('low').value=g.toLowerCase();
+            }
+            function first(){
+                f=document.getElementById('str').value;
+                document.getElementById('res').value=f.charAt(0);
+            }
+            function concate(){
+                c=document.getElementById('str').value;
+                d=document.getElementById('str1').value;
+                document.getElementById('res').value=c.concat(d);
+        
+            }
+
+            function number()
+            {
+                n=document.getElementById('num').value;
+                pw=Math.pow(n,2);
+                document.getElementById('sq').value=pw;
+                
+                nw=Math.ceil(n);
+                document.getElementById('next').value=nw;
+
+                s=Math.round(n);
+                document.getElementById('row').value=s;
+
+                a=Math.abs(n);
+                document.getElementById('abs').value=a;
+                e=Math.exp(n);
+                document.getElementById('expp').value=e;
+            }
+            function maxmini()
+            {
+                a=document.getElementById('num1').value;
+                b=document.getElementById('num2').value;
+                c=document.getElementById('num3').value;
+                d=Math.max(a,b,c);
+                e=Math.min(a,b,c);
+                document.getElementById('max').value=d;
+                document.getElementById('min').value=e;
+
+            }
+            </script>
+      <body bgcolor="cyan">
+          <h2 align="center">STRING FUNCTIONS</h2>
+        <table align="center">
+            <tr><td>
+        Enter the string</td><td><input type="text" id="str"></td></tr>
+       <tr> <td>Outcome</td><td><input type="text" id="res"></td></tr>
+       <tr><td>Replace</td><td><input type="text" id="str1"></td></tr>
+       <tr><td>Uppercase</td><td><input type="text" id="upp"></td></tr>
+       <tr><td>Lowercase</td><td><input type="text" id="low"></td></tr>
+       
+       <tr></tr><tr></tr>
+       <tr><td> <button onclick="len()">length</button></td>
+       <td><button onclick="slice()">slice</button><br></td>
+       <tr><td><button onclick="sub()">sub</button></td>
+       <td><button onclick="rep()">replace</button></td></tr>
+       <tr><td><button onclick="upper()">Uppercase</button></td>
+       <td><button onclick="lower()">lowercase</button></td></tr>
+       <tr><td><button onclick="first()">firstchar</button></td>
+       <td><button onclick="concate()">concatenation</button></td></tr>
+       </table>
+       <h2 align="center">MATH FUNCTIONS</h2>
+       <table align="center">
+        <tr>
+            <td>
+                <label>Enter a number</label>
+            </td><td><input type="number" id="num"></td>
+            <td><button onclick="number()">OK</button></td></tr>
+            <tr><td><label>Square of the number</label></td><td><input type="number" id="sq"></td></tr>
+            <tr><td>next integer</td><td><input type="number" id="next"></td></tr>
+            <tr><td>round off</td><td><input type="number" id="row"></td></tr>
+            <tr><td>absolute value</td><td><input type="number" id="abs"></td></tr>
+            <tr><td>exponential value</td><td><input type="number" id="expp"></td></tr>
+            <tr><td>Enter number1</td><td><input type="number" id="num1"></td>
+                <td><button onclick="maxmini()">OK</button></td></tr>
+            <tr><td>Enter number2</td><td><input type="number" id="num2"></td></tr>
+            <tr><td>Enter number3</td><td><input type="number" id="num3"></td></tr>
+            <tr><td>maximum value</td><td><input type="number" id="max"></td></tr>
+            <tr><td>minimum value</td><td><input type="number" id="min"></td></tr>
+
+
+
+            </table>
+
+
+
+
+    </body>
+</html>
+
+  
+            

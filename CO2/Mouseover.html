@@ -1,0 +1,36 @@
+<html>
+    <head>
+    </head>
+    
+        <script>
+            function newimage()
+            {
+               document.getElementById("img1").src="newimage.png";
+               document.getElementById("txt1").style.display="none";
+               document.getElementById("txt2").style.display="block";
+
+               
+            }
+            function oldimage()
+            {
+                document.getElementById("img1").src="oldimage.png";
+                document.getElementById("txt1").style.display="block";
+               document.getElementById("txt2").style.display="none";
+
+            }
+            
+        </script>
+
+            <body>
+            <div>
+                <center>
+                    
+                    <img id="img1" src="oldimage.png"  onmouseover="newimage()" onmouseout="oldimage()">
+                <h1 id="txt1" >hello world</h1>
+                <h1 id="txt2" >mouseover</h1>
+                    </div>
+                </center>
+                    </div>
+                    </body>
+        </body>
+        </html>                  

@@ -1,0 +1,46 @@
+<html>
+    <head><title>online exam</title>
+    </head>
+    <body>
+        <form name="myform" onsubmit="return marks()">
+           <div> <p>1.who is the father of physics? </p>
+        <input type="radio" name="qns1" >A.newton<br>
+        <input type="radio" name="qns1" id="qns1" >B.galilo<br>
+        <input type="radio" name="qns1" >C.Einstein<br>
+        <input type="radio" name="qns1" >D.max plank<br>
+        </div>
+         <div> <p>2.Capital of israel?</p>
+        <input type="radio" name="qns2" >A.Jerusalem<br>
+        <input type="radio" name="qns2" id="qns2">B.Tel aviv<br>
+        <input type="radio" name="qns2" >C.Baluchistan<br>
+        <input type="radio" name="qns2" >D.palastine<br>
+        </div>
+            <div><p>3.currency of UAE?</p>
+        <input type="radio" name="qns3" >A.Dinar<br>
+        <input type="radio" name="qns3" >B.shekkel<br>
+        <input type="radio" name="qns3" id="qns3" >C.Dirham<br>
+        <input type="radio" name="qns3" >D.Ruble<br>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+        <script>
+            score=0;
+           function marks()
+            {
+                if(document.getElementById('qns1').checked)
+                {
+                    score++;
+                }
+                if(document.getElementById('qns2').checked)
+                {
+                    score++;
+                }
+                if(document.getElementById('qns3').checked)
+                {
+                    score++;
+                }
+                alert("Your score is "+score);
+            }
+        </script>
+        </body>
+        </html>
